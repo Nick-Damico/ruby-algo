@@ -9,7 +9,29 @@ require 'pry'
 #   '1001' == true
 
 # -- Solution One
-def palindrome(str)
-  reversed = str.downcase.split('').reverse.join
-  reversed == str.downcase
-end
+# def palindrome(str)
+#   str.downcase == str.downcase.split('').reverse.join
+# end
+
+# # -- Solution Two
+# def palindrome(str)
+#   reversed = ''
+#   i = 0
+#   while i < str.length
+#     reversed = str[i] + reversed
+#     i += 1
+#   end
+#   reversed.downcase == str.downcase
+# end
+
+# # -- Solution Three
+# def palindrome(str)
+#   str.downcase == str.split('').inject { |reversed, char| reversed = char + reversed }.downcase
+# end
+
+# # # -- Solution Four
+# def palindrome(str)
+#   reversed = ''
+#   str.split('').reverse_each { |v| reversed += v }
+#   str.downcase == reversed.downcase
+# end
