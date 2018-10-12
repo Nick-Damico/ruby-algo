@@ -8,6 +8,15 @@ require 'pry'
 #   'greeting' == false
 #   '1001' == true
 
+def palindrome(str)
+  count = 0
+  str.split('').all? do |char|
+    opposite_char = str[str.length - count - 1]
+    count += 1
+    char.downcase == opposite_char.downcase
+  end
+end
+
 # -- Solution One
 # def palindrome(str)
 #   str.downcase == str.downcase.split('').reverse.join
@@ -29,7 +38,7 @@ require 'pry'
 #   str.downcase == str.split('').inject { |reversed, char| reversed = char + reversed }.downcase
 # end
 
-# # # -- Solution Four
+# # -- Solution Four
 # def palindrome(str)
 #   reversed = ''
 #   str.split('').reverse_each { |v| reversed += v }
