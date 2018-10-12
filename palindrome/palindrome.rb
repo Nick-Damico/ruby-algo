@@ -9,5 +9,4 @@ require 'pry'
 #   '1001' == true
 
 def palindrome(str)
-
 end
