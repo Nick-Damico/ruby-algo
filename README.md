@@ -33,7 +33,7 @@ structure to the challenge `.rb` files located in the directory `spec/`.
 
 1. To Run a single test for a challenge use the command:
 <br/>`rspec spec/#{challenge_name}_spec.rb`
-<br/>`rspec spec/fizzbuzz_spec.rb`
+<br/>Example: `rspec spec/fizzbuzz_spec.rb`
 
 2. Or execute all tests with command:
 <br/>`rspec`
