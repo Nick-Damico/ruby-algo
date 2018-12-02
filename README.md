@@ -18,11 +18,12 @@ You'll need to install:
  and run the command in terminal.
  `git clone https://github.com/Nick-Damico/ruby-algo`
 
-2. Change Directory to `./ruby-algo` after running or downloading above,
-   using command:
+2. Change Directory to `./ruby-algo` after running or downloading above,<br/>
+   using command:<br/>
    `cd ruby-algo`
 
-3. Run bundler with `bundle` or `bundle install`.
+3. Run bundler with<br/>
+`bundle` or `bundle install`.
 
 4. Using your code editor write solutions to the code challenges in stored in the
 multiple directories with `.rb` files of the same name. Tests share a similar naming
@@ -31,10 +32,11 @@ structure to the challenge `.rb` files located in the directory `spec/`.
 ## Running the tests
 
 1. To Run a single test for a challenge use the command:
-`rspec spec/#{challenge_name}_spec.rb`
-`rspec spec/fizzbuzz_spec.rb`
-2. or execute all tests with command:
-`rspec`
+<br/>`rspec spec/#{challenge_name}_spec.rb`
+<br/>`rspec spec/fizzbuzz_spec.rb`
+
+2. Or execute all tests with command:
+<br/>`rspec`
 
 ## Deployment
 
