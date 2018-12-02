@@ -10,16 +10,18 @@ require 'pry'
 # chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 # chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
-#Solution 1.
-def chunk(array, size)
-  chunked = []
-  array.each do |num|
-    last_chunk = chunked.last
-    if last_chunk && last_chunk.size < size
-      last_chunk.push num
-    else
-      chunked.push [num]
-    end
-  end
-  chunked
-end
+# Uncomment Solutions to test
+
+# def chunk(array, size)
+# end
+
+# Solution 1
+# def chunk(array,size)
+#   chunked = []
+#   index = 0
+#   while index < array.length
+#     chunked << array.slice(index, size)
+#     index += size
+#   end
+#   chunked
+# end
