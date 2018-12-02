@@ -25,3 +25,17 @@ require 'pry'
 #   end
 #   chunked
 # end
+
+# Solution 2
+# def chunk(arr,size)
+#   chunked = []
+#   arr.each do |num|
+#     last_chunk = chunked.last
+#     if last_chunk && last_chunk.size < size
+#       last_chunk.push num
+#     else
+#       chunked.push [num]
+#     end
+#   end
+#   chunked
+# end
