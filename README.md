@@ -15,11 +15,12 @@ You'll need to install:
 ### Installing
 
 1. Download Repository or Copy this github url https://github.com/Nick-Damico/ruby-algo
-and run the command in terminal.
-`git clone https://github.com/Nick-Damico/ruby-algo`
+ and run the command in terminal.
+ `git clone https://github.com/Nick-Damico/ruby-algo`
 
-2. Change Directory to ruby-algo after running or downloading above, using command
-`cd ruby-algo`
+2. Change Directory to `./ruby-algo` after running or downloading above,
+   using command:
+   `cd ruby-algo`
 
 3. Run bundler with `bundle` or `bundle install`.
 
