@@ -1,3 +1,4 @@
+require 'pry'
 # --- Directions
 # Check to see if two provided strings are anagrams of eachother.
 # One string is an anagram of another if it uses the same characters
@@ -13,24 +14,43 @@
 # => 1. Think of removing all none word characters, i.e. (' ', !)
 # => 2. Think of using some helper methods such as charmap method
 
-# Solution 1
-def anagrams(string_a, string_b)
-  charmap_a = charmap(format_str(string_a))
-  charmap_b = charmap(format_str(string_b))
-  if charmap_a.size != charmap_b.size
-    return false
-  end
+# # Solution 1
+# def anagrams(string_a, string_b)
+#   charmap_a = charmap(format_str(string_a))
+#   charmap_b = charmap(format_str(string_b))
+#   if charmap_a.size != charmap_b.size
+#     return false
+#   end
+#
+#   charmap_a.each do |char,i|
+#     return false if charmap_a[char] != charmap_b[char]
+#   end
+#
+#   return true
+# end
+#
 
-  charmap_a.each do |char,i|
-    return false if charmap_a[char] != charmap_b[char]
-  end
+# # Solution 2
+# def anagrams(string_a,string_b)
+#   sorted_string_a = sort_string(format_str(string_a))
+#   sorted_string_b = sort_string(format_str(string_b))
+#
+#   sorted_string_a == sorted_string_b
+# end
 
-  return true
-end
+
+
+##################################
+## Helpers
+##################################
 
 def format_str(string)
   r_pat = /[^\w]/
   string.gsub(r_pat,'').downcase
+end
+
+def sort_string(string)
+  string.split('').sort.join
 end
 
 def charmap(string)
