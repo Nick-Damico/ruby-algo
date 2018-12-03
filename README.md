@@ -38,9 +38,10 @@ structure to the challenge `.rb` files located in the directory `spec/`.
 2. Or execute all tests with command:
 <br/>`rspec`
 
-## Deployment
+## Solutions
 
-Add additional notes about how to deploy this on a live system
+If you get stuck or would like to look at alternative ways to solve the problems
+checkout the `solutions` branch here [solutions-branch](https://github.com/Nick-Damico/ruby-algo/tree/solution)
 
 ## Built With
 * Ruby 2.3.3
