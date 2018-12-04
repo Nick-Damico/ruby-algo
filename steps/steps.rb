@@ -1,3 +1,4 @@
+require 'pry'
 # --- Directions
 # Write a function that accepts a positive number N.
 # The function should console log a step shape
@@ -18,8 +19,30 @@
 #       '### '
 #       '####'
 
+# Solution 1
+# def steps(n)
+#   output = '#'
+#   i = 0
+#   while i < n
+#     padding = ''
+#     if output.length < n
+#       n - output.length.times do
+#         padding += ' '
+#       end
+#     end
+#     puts output.length < n ? output + padding : output
+#     output += '#'
+#     i += 1
+#   end
+# end
 
-def steps(n)
-  print '# '
-  print '##'
-end
+# # Solution 2
+# def steps(n)
+#   output = '#'
+#   i = 0
+#   while i < n
+#     puts output.ljust(n)
+#     output += '#'
+#     i += 1
+#   end
+# end
