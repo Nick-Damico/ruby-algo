@@ -20,6 +20,4 @@
 
 
 def steps(n)
-  print '# '
-  print '##'
 end
