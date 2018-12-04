@@ -46,3 +46,10 @@ require 'pry'
 #     i += 1
 #   end
 # end
+
+# Solution 3 Recursive
+# def steps(n,output)
+#   return if output.length > n
+#   puts output.ljust(n)
+#   steps(n,output += '#')
+# end
