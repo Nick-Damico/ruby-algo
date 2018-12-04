@@ -21,17 +21,17 @@ require 'pry'
 
 # Solution 1
 # def steps(n)
-#   output = '#'
+#   stairs = '#'
 #   i = 0
 #   while i < n
 #     padding = ''
-#     if output.length < n
-#       n - output.length.times do
+#     if stairs.length < n
+#       n - stairs.length.times do
 #         padding += ' '
 #       end
 #     end
-#     puts output.length < n ? output + padding : output
-#     output += '#'
+#     puts stairs.length < n ? stairs + padding : stairs
+#     stairs += '#'
 #     i += 1
 #   end
 # end
@@ -47,9 +47,43 @@ require 'pry'
 #   end
 # end
 
-# Solution 3 Recursive
-# def steps(n,output)
-#   return if output.length > n
-#   puts output.ljust(n)
-#   steps(n,output += '#')
+# # # Solution 3 Recursive
+# def steps(n,stairs='')
+#    # Base Case
+#   return if stairs.length == n
+#   stairs += '#'
+#   puts stairs.ljust(n)
+#   steps(n,stairs)
+# end
+
+
+# # Solution 4
+# def steps(n,row = 0, stair = '')
+#   return if n == row
+#
+#   if n == stair.length
+#     puts stair
+#     steps(n, row + 1)
+#   end
+#
+#   if stair.length <= row
+#     stair += '#'
+#   else
+#     stair += ' '
+#   end
+#   steps(n,row,stair)
+# end
+
+# # Solution 5
+# def steps(n,row = 0, stair = '')
+#   # Base Case
+#   return if n == row
+#
+#   if n == stair.length
+#     puts stair
+#   else
+#     stair += '#'
+#     puts stair.ljust(n)
+#   end
+#   steps(n, row + 1, stair)
 # end
